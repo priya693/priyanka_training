@@ -1,0 +1,184 @@
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git checkout -b css.assignments
+switched to a new branch 'css.assignments'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git branch
+* css.assignments
+  master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git checkout css.assignments
+Already on 'css.assignments'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git branch
+* css.assignments
+  master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git status 
+on branch css.assignments
+untracked files:
+  (use "git add <file>..." to include in what will be commited)
+       
+         .gitignore
+         Assignments/css_1.css
+         Assignments/css_2.css
+         Assignments/css_3.css
+
+nothing changes added to commit but untracked files present (use "git add" to track)
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git add Assignments/css_1.css Assignments/css_2.css Assignments/css_3.css Assignments
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git commit -m "added css Asssignments"
+[css.assignments f321480] added css Assignments
+3 files changed , 3 insertions(+)
+create mode 100644 Assignments/css_1.html
+create mode 100644 Assignments/css_2.html
+create mode 100644 Assignments/css_3.html
+
+  
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ ls
+Assignments index.html info.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ cd Assignments/
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ ls
+asignments_1.html asignments_2.html asignments_3.html asignments_4.html css_1.css css_2.css css_3.css README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ nano add README.txt
+ 
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git status 
+on branch css_assignments
+changes not staged for commit:
+  (use "git add <file>..." to update what will be commited)
+  (use "git checkout ..<file>..." to discard changes in working directory)
+
+       modified :  README.txt
+
+untracked files:
+ (use "git add <file>..." to include in what will be committed)
+       
+              ../.gitignore
+              
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git add README.txt
+
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git commit -m "changed for README.txt"
+[css.assignments 3b65709] changed for README.txt
+1 file changed,1 insertion(+), 1 deletion(-)
+ 
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git checkout master
+switched to branch 'master'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git branch
+   css.assignments
+*  master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ nano  README.txt
+ 
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git status 
+on branch master
+changes not staged for commit:
+  (use "git add <file>..." to update what will be commited)
+  (use "git checkout ..<file>..." to discard changes in working directory)
+
+       modified :  README.txt
+
+untracked files:
+ (use "git add <file>..." to include in what will be committed)
+       
+              ../.gitignore
+              
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git add README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git checkout css.assignments
+switched to branch 'css.assignments'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git branch
+* css.assignments
+  master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ nano css_1.css
+ 
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git status 
+on branch css.assignments
+changes not staged for commit:
+  (use "git add <file>..." to update what will be commited)
+  (use "git checkout ..<file>..." to discard changes in working directory)
+
+       modified :  css_1.css
+
+untracked files:
+ (use "git add <file>..." to include in what will be committed)
+       
+              ../.gitignore
+              
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git add css_1.css
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git status 
+on branch css.assignments
+changes to be commmited:
+  (use "git reset HEAD <file>..." to unstage)
+
+       modified :  css_1.css
+
+untracked files:
+ (use "git add <file>..." to include in what will be committed)
+       
+              ../.gitignore
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git checkout master
+switched to branch 'master'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git branch 
+  css.assignments
+* master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git merge css.assignments
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git branch
+  css.assignments
+* master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments~ (master)
+$ git branch -d css.assignments
+Deleted branch css.assignments 
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/Assignments ~ (master)
+$ git branch
+* master
+
+
+

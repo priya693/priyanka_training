@@ -1,0 +1,137 @@
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~ (master)
+$ mkdir assignments && cd assignments
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ touch README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git add README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git commit -m "added README.txt"
+[master B564619] added README.txt
+1 file changed , 1 insertion(+)
+create mode 100644 assignments/README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git checkout -b html.assignments
+ assignments/README.txt
+switched to a new branch 'html.assignments'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git branch
+* html.assignments
+  master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git status 
+on branch html.assignments
+changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be commited)
+  (use "git checkout ..<file>..." to discard changes in working directory)
+
+       deleted :  README.txt
+
+untracked files:
+ (use "git add <file>..." to include in what will be committed)
+       
+              ../.gitignore
+               README.txt
+               asignments_1.html
+               asignments_2.html
+               asignments_3.html
+               asignments_4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git add .
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git commit -m "added html asssignments"
+[html.assignments f321480] added html assignments
+5 files changed , 4 insertions(+)
+rename assignments/{README.txt --> README.txt}  {100%}
+create mode 100644 assignments/asignment-1.html
+create mode 100644 assignments/asignment-2.html
+create mode 100644 assignments/asignment-3.html
+create mode 100644 assignments/asignment-4.html
+  
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git checkout master
+switched to branch 'master'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git branch
+ html.assignments
+*master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git add README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git commit -m "minor changes"
+[master be18u33] minor changes
+1 file changed, 1 deletion(-)
+ delete mode 106644 assignments/README.txt
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git checkout html.assignments
+switched to branch 'html.assignments'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir/assignments ~ (master)
+$ git branch
+* html.assignments
+  master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git checkout master
+switched to branch 'master'
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git branch
+  html.assignments
+* master
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git merge html.assignments
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git branch -d html.assignments
+Deleted branch html.assignments 
+
+Priya@LAPTOP-A2CKL8EE-MINGW64 ~/project_dir ~ (master)
+$ git branch
+* master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
